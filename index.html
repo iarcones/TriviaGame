@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+    
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- reset CSS to crossover browsers-->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+      <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Trivia Game</title>
+  </head>
+
+  <body>
+
+    <div class="container bg-grey">
+           
+
+            <button id="start" type="button" class="btn btn-light btn-start">Start</button>
+          
+            <div class="container questions">
+                <h1>Trivia Game</h1>
+                <h2>Time Remaining: <span id="timing"></span> Seconds</h2>
+                <h2 id="question"></h2>
+          
+                <div class="container btn-group-vertical responses">
+                    <button id="A1" type="button" class="btn btn-outline-success answer" value=0></button>
+                    <button id="A2" type="button" class="btn btn-outline-success answer" value=1></button>
+                    <button id="A3" type="button" class="btn btn-outline-success answer" value=2></button>
+                    <button id="A4" type="button" class="btn btn-outline-success answer" value=3></button>
+                </div>
+            </div>  
+            
+            <div class="container results">
+                <h1>Trivia Game</h1>
+                <!-- <h2>Time Remaining: <span id="timing"></span></h2> -->
+                <h2>All done, heres how you did!</h2>
+                <br>
+                <h2>Correct Answers: <span id="corrects"></span></h2>
+                <h2>Incorrect Answers: <span id="incorrect"></span></h2>
+                <h2>Unanswered: <span id="unanswered"></span></h2>
+                <button id="startOver" type="button" class="btn btn-light btn-startOver">Start Over?</button>
+            </div>
+      
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script src="./assets/javascript/app.js"></script>
+  
+</body>
+</html>
