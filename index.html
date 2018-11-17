@@ -22,45 +22,24 @@
 
   <body>
 
-    <div class="container bg-grey">
-           
-
             <button id="start" type="button" class="btn btn-light btn-start">Start</button>
-          
-            <div class="container questions">
-                <h1>Trivia Game</h1>
-                <h2>Time Remaining: <span id="timing"></span> Seconds</h2>
-                <h2 id="question"></h2>
-          
-                <div class="container btn-group-vertical responses">
-                    <button id="A1" type="button" class="btn btn-outline-success answer" value=0></button>
-                    <button id="A2" type="button" class="btn btn-outline-success answer" value=1></button>
-                    <button id="A3" type="button" class="btn btn-outline-success answer" value=2></button>
-                    <button id="A4" type="button" class="btn btn-outline-success answer" value=3></button>
-                </div>
-            </div>  
+            <button id="restart" type="button" class="btn btn-light btn-restart">Restart</button>
             
-            <div class="container results">
-                <h1>Trivia Game</h1>
-                <!-- <h2>Time Remaining: <span id="timing"></span></h2> -->
-                <h2>All done, heres how you did!</h2>
-                <br>
-                <h2>Correct Answers: <span id="corrects"></span></h2>
-                <h2>Incorrect Answers: <span id="incorrect"></span></h2>
-                <h2>Unanswered: <span id="unanswered"></span></h2>
-                <button id="startOver" type="button" class="btn btn-light btn-startOver">Start Over?</button>
-            </div>
-      
+    <div class="container areagame">
+            <h1 id="title">Trivia Game</h1>
+         
+           <div id="timer"></div>
+
+            <div id="question"></div>
+
+            <div id="answers"></div>
+
+            
+            <div id="message"></div>
+
+            <div id="results"></div>
+
     </div>
-    
-
-
-
-
-
-
-
-
 
 
     <!-- Optional JavaScript -->

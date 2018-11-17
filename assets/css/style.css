@@ -13,98 +13,102 @@ html {
 body {
     background-image: url("https://blissshurfine.com/sites/default/files/Trivia_1.png"); 
 
-    background-color:white;
+    background-color:grey;
     margin: 0 0;
     text-align: center;
+    color: white;
 }
 
   * {
     box-sizing: border-box;
   }
   
-  /* general */
-
-.container {
-    width: 100%;
-    max-width: 980px;
-    margin: 0 auto;
-    clear: both;
-}
-
-.questions {
+  #restart {
     visibility: hidden;
-    background-color: rgba(104, 98, 112, 0.8);
-    width: 100%;
-    height: 450px;
-    margin: 120px auto auto auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: white;
-    justify-content: center;
-    position: absolute;
-}
+  }
 
-.results {
+
+
+
+#title {
     visibility: hidden;
-    background-color: rgba(104, 98, 112, 0.8);
-    width: 100%;
-    height: 450px;
-    margin: 120px auto auto auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: white;
-    justify-content: center;
-    justify-content: space-between;
-    position: absolute;
+     
 }
 
+#title {
+    font-size: 80px;
+   
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(10, 136, 98);
+
+}
 .btn-start {
     margin: 2rem auto;
     display: block;
-    padding: 1rem 5rem 1rem 5rem;
-    color: white;
+    padding: 0.5rem 4rem 0.5rem 4rem;
+  
     background-color: green;
-    font-family: inherit;
-    font-size: 4rem;
-    border-radius: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 5rem;
+    border-radius: 1rem;
     position: absolute;
     left: 40%;
     top: 65%;
+    z-index: 1;
 
 }
 
-.btn-startOver {
-    margin: 1rem auto;
+.btn-restart {
+    margin: 2rem auto;
     display: block;
-    padding: 1rem 2rem 1rem 2rem;
-    color: white;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+
     background-color: green;
-    font-family: inherit;
-    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+    border-radius: 1rem;
+    position: absolute;
+    left: 60%;
+    top: 65%;
+    z-index: 1;
+
+}
+.areagame {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.623);
+    width: 100%;
+    height: 500px;
+    margin: 50px auto auto auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    justify-content: center;
+    z-index: 99;
+   
 }
 
-.answer {
-    margin: 1rem auto;
-    width: 2rem;
-    color: white;
-    background-color: rgba(82, 192, 31, 0.5);
-    font-family: inherit;
-    font-size: 2rem;
-   
+#timer {
+    font-size: 20px;
+    font: bold;
+    color: grey;
+  
+}
+
+
+#answers {
+    padding-bottom: 3rem;
 }
 
 #question {
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 30px;
+    font: bold;
    
+    padding-bottom: 25px;
 }
 
-.responses {
-    width: 20rem;
-}
+#clickBtn {
+    font-size: 30px;
 
-.h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    color: blue;
+
 }
