@@ -3,24 +3,32 @@
     var corrects = 0;
     var incorrect = 0;
     var unanswered = 0;
-    var timeCount = 15;
+    var timeCount = 9;
     var index = 0;
     var lastquestion = false;
     var crono;
 
 var questions =[
-    {question:"what's your name",
-    answers:["Isabel", "Sasha", "Jerome", "Jimmy"],
-    correctAnswer:"Isabel",
+    {question:"What superhero was born with the Curse of Kordax?",
+    answers:["Aquaman", "Superman", "Hawkman", "Captain Marvel"],
+    correctAnswer:"Aquaman",
     
 },{
-    question:"What is the state you are leaving",
-    answers:["Colorado", "California", "Arizona", "Florida"],
-    correctAnswer:"California"
+    question:"What is Superman's real name?",
+    answers:["Clark Kent", "Peter Parker", "Bruce Wayne", "Kal-El"],
+    correctAnswer:"Kal-El"
 },{
-    question:"What the most populated state of America",
-    answers:["Colorado", "California", "Arizona", "Florida"],
-    correctAnswer:"Florida"
+    question:"What is the name of the Green Arrow's apprentice?",
+    answers:["Blue Arrow", "Speedy", "Quick Arrow", "Slick"],
+    correctAnswer:"Speedy"
+},{
+    question:"Who is the Oracle in the DC Universe?",
+    answers:["The Riddler", "Barbara Gordon", "Lois Lane", "Jimmy Olsen"],
+    correctAnswer:"Barbara Gordon"
+},{
+    question:"What is the name of the original Flash?",
+    answers:["Barry Allen", "Bart Allen", "Wally West", "Jay Garrick"],
+    correctAnswer:"Jay Garrick"
 }]
 
 $("#start").on("click", function () {
@@ -64,14 +72,14 @@ function showQuestion() {
             corrects++;
             correctQuestion = 1;
             $("#message").empty();
-            $("#message").html("<h2>Correct!!! Good Job :-), let's go for the next one</h2><br>");
+            $("#message").html("<h2>Correct!!! Good Job 😀👍🏻</h2><br>");
             results();
         }
         else {
             incorrect++;
             correctQuestion = 2;
             $("#message").empty();
-            $("#message").html("<h2>Nope!!! the correct answer was: " + currentQuestion.correctAnswer + " let's go for the next one</h2><br>");
+            $("#message").html("<h2>Nope!!! 👎🏼 the correct answer was: " + currentQuestion.correctAnswer + "</h2><br>");
             results();
         }
     });
@@ -84,14 +92,14 @@ function startTimer() {
 
 function countDown() {
 
-    $("#timer").html("<p>Time Remaining: " + timeCount + " Seconds</p>");
+    $("#timer").html("<h3>Time Remaining: " + timeCount + " Seconds</h3>");
    
     timeCount--;
 
     if (timeCount < 0) {
         stopTimer();
         unanswered++;
-        $("#message").html("<p>Out of time. The correct answer is: " + currentQuestion.correctAnswer + "</p>");
+        $("#message").html("<h2>Out of time 🥵🥺 . The correct answer is: " + currentQuestion.correctAnswer + "</h2>");
         results();
  
     }
@@ -109,7 +117,7 @@ function results() {
         $("#question").empty();
         $("#answer").empty();
 
-        timeCount = 15;
+        timeCount = 9;
       
         if (index === questions.length) {
             gameOver();
@@ -143,12 +151,13 @@ function gameOver(){
 $("#restart").on("click", function () {
 
     $("#message").empty();
+    $("#results").empty();
     $("#question").attr({style: "visibility: visible;"});
     $("#answers").attr({style: "visibility: visible;"});
     corrects = 0;
     incorrect = 0;
     unanswered = 0;
-    timeCount = 15;
+    timeCount = 9;
     index = 0;
     lastquestion = false;
     crono;
