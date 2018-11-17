@@ -36,13 +36,16 @@ body {
 }
 
 #title {
-    font-size: 80px;
-   
+    font-size: 50px;
+    background-color: #000000ad;
     font-weight: 500;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(10, 136, 98);
+    margin-bottom: 2rem;
+    padding: 0;
 
 }
+
 .btn-start {
     margin: 2rem auto;
     display: block;
@@ -107,8 +110,3 @@ body {
     padding-bottom: 25px;
 }
 
-#clickBtn {
-    font-size: 30px;
-
-
-}

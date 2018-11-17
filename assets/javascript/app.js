@@ -54,6 +54,10 @@ function showQuestion() {
         optionBtn = $("<button>");
         optionBtn.html(questions[index].answers[j]);
         optionBtn.addClass("clickBtn");
+        optionBtn.css("color", "green");
+        optionBtn.css("margin", "5px");
+        optionBtn.css("font-size", "20px");
+    
         optionBtn.val(j);
         $("#answers").append(optionBtn);
     }
@@ -127,7 +131,7 @@ function results() {
             startTimer();
             showQuestion();
         }
-    }, 1500);
+    }, 1000);
 
 
 }
