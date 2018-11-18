@@ -41,9 +41,6 @@ $("#start").on("click", function () {
     
 });
 
-
-
-
 function showQuestion() {
 
     $("#question").html("<h2>" + questions[index].question + "</h2>");
@@ -57,7 +54,8 @@ function showQuestion() {
         optionBtn.css("color", "green");
         optionBtn.css("margin", "5px");
         optionBtn.css("font-size", "20px");
-    
+        
+        
         optionBtn.val(j);
         $("#answers").append(optionBtn);
     }
@@ -137,6 +135,7 @@ function results() {
 }
 
 function gameOver(){
+    stopTimer();
     $("#question").empty();
     $("#answers").empty();
     $("#question").attr({style: "visibility: hidden;"});
